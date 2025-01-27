@@ -110,7 +110,7 @@ hr{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
 
     .btn{
         background-color: var(--gialloboo-light);
@@ -129,6 +129,11 @@ hr{
     }
 }
 
+.banner{
+    display: none;
+    padding: 1rem 0;
+}
+
 .presentation{
     padding: 1rem 0;
 
@@ -139,11 +144,13 @@ hr{
     .content{
         p{
             line-height: 2rem;
+            padding-bottom: 3rem;
         }
     }
 }
 
 #site_footer{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
     background-color: var(--gialloboo-bg-footer);
     padding: 1rem 0;
     color: var(--gialloboo-light);
@@ -151,6 +158,7 @@ hr{
 
     span{
         display: inline-block;
+        padding: 0.50rem;
     }
 
     #copy{
@@ -159,6 +167,12 @@ hr{
 }
 
 @media screen and (min-width: 768px){
+
+    .container{
+        width: 100%;
+        min-width: 768px;
+        padding: 2rem;
+    }
 
     .site_title{
         text-align: left;
@@ -194,8 +208,61 @@ hr{
             padding: 0.75rem 3rem;
         }
     }
+
+    .banner{
+        display: block;
+    }
+
+    .presentation{
+        img{
+            float: inline-start;
+            padding-right: 1rem;
+        }
+    }
 }
 
 @media screen and (min-width: 992px){
 
+    .container{
+        width: 100%;
+        min-width: 992px;
+        padding: 2rem;
+    }
+    
+    .name_recipe{
+        
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    .row{
+        flex-direction: row;
+    }
+
+    .col-4{
+        width: calc(100% / 12 * 4);
+        
+        ul{
+            display: block;
+
+            li{
+                display: block;
+            }
+        }
+    }
+
+    .col-8{
+        width: calc(100% / 12 * 8);
+    }
+
+    .social{
+        .btn{
+            a{
+                strong{
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }
