@@ -7,6 +7,7 @@
 /* Utility */
 :root{
     --gialloboo-title: #ff9614;
+    --gialloboo-name-recipe: #4e3969;
     --gialloboo-background: #f6f5f3;
     --gialloboo-bg-footer: #7c69a4;
     --gialloboo-dark: #000000;
@@ -18,8 +19,26 @@
     margin: auto;
 }
 
+img{
+    width: 100%;
+}
+
 .row{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: calc(100% / 12 * 4);
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-8{
+    width: calc(100% / 12 * 8);
 }
 
 .col-12{
@@ -30,7 +49,7 @@
 .site_title{
     font-family: "Nerko One", serif;
     color: var(--gialloboo-title);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     padding: 1rem;
 }
@@ -39,4 +58,75 @@
 
 #site_main{
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    background-color: var(--gialloboo-background);
+}
+
+.name_recipe{
+    padding: 2rem 0;
+
+    h1{
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: var(--gialloboo-name-recipe);
+        span{
+            display: none;
+        }
+    }
+
+    span{
+        color: #afafae;
+    }
+}
+
+.tutorial{
+
+    
+    .col-12{
+        background-color: var(--gialloboo-light);
+
+        h1{
+            padding: 1rem;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0 1rem;
+
+            li{
+                padding: 0.5rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .site_title{
+        text-align: left;
+        font-size: 1rem;
+        padding-bottom: 0;
+    }
+
+    .name_recipe{
+
+        h1{
+            span{
+                display: inline-block;
+                color: var(--gialloboo-name-recipe);
+            }
+        }
+    }
+
+    .col-12{
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        li{
+            display: inline-block;
+        }
+    }
 }
