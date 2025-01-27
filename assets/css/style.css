@@ -167,6 +167,7 @@ hr{
 
     #copy{
         font-weight: bold;
+        display: block;
     }
 
     a{
@@ -237,6 +238,19 @@ hr{
         width: 100%;
         min-width: 992px;
         padding: 2rem;
+
+        .footer{
+            display: flex;
+            justify-content: space-between;
+
+            .info{
+                text-align: start;
+            }
+
+            .terms{
+                text-align: end;
+            }
+        }
     }
     
     .name_recipe{
