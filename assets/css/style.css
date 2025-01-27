@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utility */
+:root{
+    --gialloboo-title: #ff9614;
+    --gialloboo-background: #f6f5f3;
+    --gialloboo-bg-footer: #7c69a4;
+    --gialloboo-dark: #000000;
+    --gialloboo-light: #ffffff;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.col-12{
+    width: 100%;
+}
+
+/* Header */
+.site_title{
+    font-family: "Nerko One", serif;
+    color: var(--gialloboo-title);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main */
+
+#site_main{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
