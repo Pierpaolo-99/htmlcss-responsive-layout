@@ -19,10 +19,6 @@
     margin: auto;
 }
 
-img{
-    width: 100%;
-}
-
 .row{
     display: flex;
     flex-direction: column;
@@ -45,11 +41,18 @@ img{
     width: 100%;
 }
 
+hr{
+    margin-right: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--gialloboo-title);
+}
+
 /* Header */
 .site_title{
     font-family: "Nerko One", serif;
     color: var(--gialloboo-title);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
 }
@@ -80,6 +83,10 @@ img{
 
 .tutorial{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    img{
+        width: 100%;
+    }
     
     .col-12{
         background-color: var(--gialloboo-light);
@@ -102,8 +109,8 @@ img{
 .social{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 2.5rem 0;
+    gap: 1rem;
+    padding: 1rem 0;
 
     .btn{
         background-color: var(--gialloboo-light);
@@ -119,6 +126,35 @@ img{
                 display: none;
             }
         }
+    }
+}
+
+.presentation{
+    padding: 1rem 0;
+
+    .title_section{
+        font-size: 1.5rem;
+    }
+
+    .content{
+        p{
+            line-height: 2rem;
+        }
+    }
+}
+
+#site_footer{
+    background-color: var(--gialloboo-bg-footer);
+    padding: 1rem 0;
+    color: var(--gialloboo-light);
+    text-align: center;
+
+    span{
+        display: inline-block;
+    }
+
+    #copy{
+        font-weight: bold;
     }
 }
 
@@ -152,4 +188,14 @@ img{
             display: inline-block;
         }
     }
+
+    .social{
+        .btn{
+            padding: 0.75rem 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+
 }
