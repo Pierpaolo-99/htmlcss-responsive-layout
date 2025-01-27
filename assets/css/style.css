@@ -142,6 +142,10 @@ hr{
     }
 
     .content{
+
+        img{
+            width: 70%;
+        }
         p{
             line-height: 2rem;
             padding-bottom: 3rem;
@@ -164,6 +168,10 @@ hr{
     #copy{
         font-weight: bold;
     }
+
+    a{
+        color: var(--gialloboo-light);
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -183,6 +191,8 @@ hr{
     .name_recipe{
 
         h1{
+            font-size: 2.5rem;
+
             span{
                 display: inline-block;
                 color: var(--gialloboo-name-recipe);
